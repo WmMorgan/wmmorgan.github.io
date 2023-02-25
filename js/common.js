@@ -32,5 +32,12 @@ $(document).ready(function() {
     $(".top-menu li").click(function() { $(".top-menu li").removeClass("active");
         $(this).addClass("active"); });
     $(window).on("load", function() {
-        $(".menu li a[rel='m_PageScroll2id']").mPageScroll2id({ offset: $("#id"), scrollSpeed: 900, }); });
-    new WOW().init(); });
+        $(".menu li a[rel='m_PageScroll2id']").mPageScroll2id({ offset: $("#id"), scrollSpeed: 900, });
+    });
+
+    var width = $("body").width();
+    if (width > 1024) {
+        new WOW().init();
+    }
+
+});
