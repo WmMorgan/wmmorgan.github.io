@@ -1,0 +1,100 @@
+@media screen and (max-width: 768px) {
+
+		header .logotype img {
+			width: 200px;
+		}
+
+		header .header-post p {
+			font-size: 16px;
+		}
+
+		header .header-post a {
+			font-size: 14px;
+		}
+
+		header .header-address::before {
+		  	padding: 25px 10px 45px 0px;
+		}
+
+		header .header-address p {
+			font-size: 15px;
+		}
+
+		header .header-address .map a {
+		  	font-size: 14px;
+		}
+
+		header .header-phone .phone {
+  			padding: 23px 0 0 0;
+		}
+
+		header .header-phone p {
+			font-size: 18px;
+		}
+
+		header .header-phone a {
+			font-size: 14px;
+		}
+
+		header .header-phone img {
+			margin-top: 27px;
+			margin-left: 35px;
+		}
+/*==================MENU===================*/
+		#top-menu .menu  {
+			font-size: 16px;
+			height: 60px;
+		}
+
+		.menu .menu1 {
+		  	padding: 18px 0 19px 0;
+		  	padding-left: 20px;
+		  	padding-right: 20px;
+		}
+
+		.menu .menu1:last-of-type {
+		  	padding-left: 20px;
+		  	padding-right: 20px;
+		}
+		.menu .menu2 {
+		  	padding: 7px 0 7px 0;
+		  	padding-left: 19px;
+		  	padding-right: 19px;
+		}
+
+		.menu li:before {
+			top: 9px;
+		}
+/*==================SLIDER===================*/
+		#slider img {
+			height: 500px;
+		}
+
+		#slider .top-txt {
+			padding-top: 43px;
+			height: 440px;
+		}
+
+		#slider .top-txt h1 {
+			font-size: 42px;
+			line-height: 42px;
+			 margin-bottom: 20px;
+		}
+
+		#slider .top-txt p {
+			line-height: 20px;
+		}
+
+		#slider .top-txt button {
+			margin-top: 28px;
+			padding: 10px 30px;
+			font-size: 18px;
+		}
+
+		#slider .top-txt .btn-slider {
+			margin-top: 115px;
+		}
+
+
+
+}

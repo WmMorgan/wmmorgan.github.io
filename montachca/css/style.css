@@ -1,0 +1,760 @@
+/*==================FONTS===================*/
+@font-face {
+  font-family: 'PFDinDisplay';
+  src: url('../fonts/PFDinDisplayPro-Black.eot');
+  src: url('../fonts/PFDinDisplayPro-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PFDinDisplayPro-Black.woff') format('woff'),
+    url('../fonts/PFDinDisplayPro-Black.ttf') format('truetype');
+  font-weight: Black;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PFDinDisplay';
+  src: url('../fonts/PFDinDisplayPro-Bold.eot');
+  src: url('../fonts/PFDinDisplayPro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PFDinDisplayPro-Bold.woff') format('woff'),
+    url('../fonts/PFDinDisplayPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PFDinDisplay';
+  src: url('../fonts/PFDinDisplayPro-Regular.eot');
+  src: url('../fonts/PFDinDisplayPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PFDinDisplayPro-Regular.woff') format('woff'),
+    url('../fonts/PFDinDisplayPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+/*==================FONTS END===================*/
+body {
+  padding: 0px;
+  font-family: "PFDinDisplay" !important;
+  font-weight: normal;
+  overflow-x: hidden;
+}
+p {
+  margin: 0 !important;
+  padding: 0;
+}
+/*==================HEADER===================*/
+header {
+  height: 80px;
+}
+header .logotype img {
+  margin-top: 10px;
+  max-width: 270px;
+  width: 100%;
+}
+header .header-post::before {
+  content: url(../images/mail.png);
+  padding: 25px 15px 0 34px;
+  float: left;
+}
+header .header-post .mail {
+  padding-top: 22px;
+}
+header .header-post p {
+  font-size: 18px;
+  color: #232c2e;
+}
+header .header-post a {
+  margin-left: 64px;
+  font-size: 16px;
+  color: #a8acaf;
+  border-bottom: 1px dashed #a8acaf;
+}
+header .header-post a:hover {
+  color: #ffab00;
+  text-decoration: none;
+  border-bottom: 1px dashed #ffab00;
+}
+header .header-address::before {
+  content: url(../images/map.png);
+  padding: 25px 15px 45px 34px;
+  float: left;
+}
+header .header-address .map {
+  padding-top: 22px;
+  font-size: 18px;
+  color: #232c2e;
+}
+header .header-address .map a {
+  font-size: 16px;
+  color: #a8acaf;
+  border-bottom: 1px dashed #a8acaf;
+}
+header .header-address .map a:hover {
+  color: #ffab00;
+  text-decoration: none;
+  border-bottom: 1px dashed #ffab00;
+}
+header .header-phone .phone {
+  padding: 12px 0 0 38px;
+}
+header .header-phone p {
+  font-size: 26px;
+  color: #ffab00;
+  font-family: "PFDinDisplay";
+  font-weight: bold;
+  float: right;
+}
+header .header-phone img {
+  margin-top: 42px;
+  display: block;
+  position: absolute;
+  margin-left: 85px;
+}
+header .header-phone a {
+  float: right;
+  font-size: 16px;
+  color: #a8acaf;
+  border-bottom: 1px dashed #a8acaf;
+}
+header .header-phone a:hover {
+  color: #ffab00;
+  text-decoration: none;
+  border-bottom: 1px dashed #ffab00;
+}
+/*==================MENU===================*/
+#top-menu .menu {
+  height: 80px;
+  background: #fec606;
+  border-radius: 2px;
+}
+.menu li {
+  float: left;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.menu li:first-of-type {
+  margin-left: 5px;
+}
+.menu li:before {
+  content: url(../images/separator.jpg);
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 18px;
+  margin-right: 0px;
+}
+.menu .menu1 {
+  display: block;
+  padding: 28px 0 29px 0;
+  padding-left: 43px;
+  padding-right: 43px;
+}
+.menu .menu1:last-of-type {
+  padding-left: 38px;
+  padding-right: 38px;
+}
+.menu .menu2 {
+  display: block;
+  padding: 17px 0 17px 0;
+  padding-left: 37px;
+  padding-right: 37px;
+}
+.menu a {
+  left: 100px;
+  font-size: 22px;
+  font-family: "PFDinDisplay";
+  font-weight: bold;
+  color: #fff;
+  padding-right: 5px;
+  letter-spacing: 20;
+  line-height: 23px;
+}
+.menu a:hover {
+  background: #ffab00;
+  text-decoration: none;
+  color: #fff;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+}
+.menu a:visited {
+  color: #fff;
+}
+.menu a:focus {
+  text-decoration: none;
+}
+/*==================SLIDER===================*/
+#slider img {
+  width: 100%;
+  height: 700px;
+  z-index: -100;
+  position: absolute;
+  margin-top: -60px;
+}
+#slider .top-txt {
+  padding-top: 86px;
+  color: #fff;
+  position: relative;
+  height: 640px;
+}
+#slider .top-txt h1 {
+  font-family: "PFDinDisplay";
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 80px;
+  margin-bottom: 30px;
+  letter-spacing: 1.6px;
+  margin-top: 0px;
+}
+#slider .top-txt p {
+  font-size: 16px;
+  line-height: 30px;
+}
+#slider .top-txt button {
+  margin-top: 42px;
+  font-size: 20px;
+  color: #232c2e;
+  font-family: "PFDinDisplay";
+  font-weight: bold;
+  padding: 15px 35px;
+  background: #ffea00;
+  letter-spacing: 0.4px;
+  border-radius: 2px;
+  position: absolute;
+  border: none;
+  z-index: 100;
+  cursor: pointer;
+}
+#slider .top-txt .btn-slider {
+  z-index: 100;
+  position: absolute;
+  margin-top: 160px;
+}
+#slider .top-txt span {
+  z-index: 100;
+  position: absolute;
+  display: block;
+  background: url(../images/1_normal.jpg) repeat-x;
+  height: 5px;
+  width: 40px;
+  cursor: pointer !important;
+}
+#slider .top-txt span:hover {
+  background: url(../images/2_hover.jpg) repeat-x;
+}
+#slider .top-txt .btn-slider2 {
+  margin-left: 50px;
+}
+#slider .top-txt .btn-slider3 {
+  margin-left: 100px;
+}
+#slider .top-txt .btn-slider4 {
+  margin-left: 150px;
+}
+#slider .top-txt .btn-slider5 {
+  margin-left: 200px;
+}
+/*==================About===================*/
+#about-us .about-company {
+  position: relative;
+  margin-top: 53px;
+}
+#about-us .about-company .about-tit {
+  background: url(../images/bg-us.png) no-repeat;
+  padding-bottom: 30px;
+}
+#about-us .about-company h2 {
+  margin-top: 54px;
+  padding-top: 17px;
+  padding-left: 32px;
+  height: 60px;
+  font-family: "PFDinDisplay";
+  font-weight: bold;
+  font-size: 23px;
+  color: #fff;
+  line-height: 25px;
+  letter-spacing: 0.46px;
+  text-transform: uppercase;
+}
+#about-us .about-company h2 span {
+  color: #fec606;
+}
+#about-us .about-company p {
+  font-family: "PFDinDisplay";
+  font-weight: normal;
+  font-size: 16px;
+  color: #a8acaf;
+  line-height: 30px;
+}
+#about-us .form {
+  position: relative;
+  width: 370px;
+  height: 440px;
+  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+}
+#about-us .form img {
+  position: relative;
+  top: -80px;
+  border-radius: 2px;
+}
+#about-us .form p {
+  top: -150px;
+  display: block;
+  position: relative;
+  font-family: "PFDinDisplay";
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #fff;
+}
+#about-us .form input {
+  color: #a8acaf;
+  padding: 10px 16px;
+  border: none;
+  border-bottom: 1px solid #a8acaf;
+  margin-top: 25px;
+  font-size: 16px;
+  font-family: "PFDinDisplay";
+  font-weight: normal;
+  line-height: 25px;
+  outline: none;
+}
+#about-us .form input:focus {
+  border-bottom: 1px solid #ffab00;
+  color: #ffab00;
+}
+#about-us .form textarea {
+  margin-top: 30px;
+  outline: none;
+  padding: 12px 15px;
+  border: 1px solid #a8acaf;
+}
+#about-us .form textarea:focus {
+  border: 1px solid #ffab00;
+  color: #ffab00;
+}
+#about-us .form button {
+  margin-top: 30px;
+  margin-bottom: 62px;
+  padding: 14px 40px;
+  background: #ffea00;
+  font-family: "PFDinDisplay";
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  border: none;
+  border-radius: 2px;
+  color: #232c2e;
+}
+#about-us .form form {
+  position: absolute;
+  top: 30px !important;
+}
+#about-us .ab-tit {
+  font-family: "PFDinDisplay";
+  font-weight: bold;
+  font-size: 20px;
+  color: #232c2e;
+  line-height: 30px;
+  letter-spacing: 0.4px;
+  padding-top: 35px;
+  border-bottom: 1px dashed #a8acaf;
+  position: absolute;
+}
+#about-us .advatantages {
+  margin-top: 30px;
+  background: #f9fafb;
+  height: 160px;
+}
+#about-us .advatantages .advant-item img {
+  float: left;
+  padding-top: 25px;
+  padding-right: 15px;
+}
+#about-us .advatantages .advant-item h4 {
+  float: left;
+  color: #232c2e;
+  font-family: "PFDinDisplay";
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  padding-top: 32px;
+  text-transform: uppercase;
+}
+#about-us .advatantages .advant-item p {
+  float: left;
+  color: #a8acaf;
+  font-family: "PFDinDisplay";
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+/*==================SERVICE===================*/
+#service {
+  height: 505px;
+  position: relative;
+}
+#service img {
+  width: 100%;
+  position: absolute;
+  height: 330px;
+}
+#service .ser-title {
+  background: url(../images/bg-service.png) no-repeat;
+  height: 65px;
+  margin-top: 40px;
+  position: relative;
+}
+#service .ser-title h2 {
+  padding-left: 30px;
+  padding-top: 16px;
+  color: #fff;
+  font-family: "PFDinDisplay";
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 25px;
+  letter-spacing: 0.46px;
+  text-transform: uppercase;
+}
+#service .ser-title span {
+  color: #fec606;
+}
+#service .item-serv {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+#service .item-serv:hover .outline {
+  background: url(../images/outline2.png) no-repeat;
+  background-position-y: -12px;
+}
+#service .item-serv img {
+  width: 100%;
+  height: 210px;
+  border: 5px solid #fff;
+  position: relative;
+}
+#service .item-serv a {
+  text-decoration: none;
+}
+#service .item-serv .outline {
+  background: url(../images/outline1.png) no-repeat;
+  background-position-y: -12px;
+  position: relative;
+  display: block;
+  margin-left: 6px;
+  height: 115px;
+  z-index: -20;
+  top: -12px;
+}
+#service .item-serv .outline h3 {
+  padding-top: 20px;
+  font-size: 24px;
+  color: #232c2e;
+  font-family: "PFDinDisplay";
+  font-weight: bold;
+  line-height: 30px;
+  letter-spacing: 0.72px;
+}
+#service .item-serv .outline p {
+  font-size: 16px;
+  color: #424d53;
+  font-family: "PFDinDisplay";
+  font-weight: normal;
+  line-height: 30px;
+  letter-spacing: 0.32px;
+}
+/*==================AUTOPARK===================*/
+#autopark {
+  height: 1370px;
+  position: relative;
+}
+#autopark img {
+  left: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 1370px;
+  position: absolute;
+}
+#autopark .park-title {
+  position: relative;
+  background: url(../images/bg-title.png) no-repeat;
+  height: 60px;
+  margin-top: 70px;
+  margin-bottom: 35px;
+}
+#autopark .park-title h2 {
+  padding-left: 30px;
+  padding-top: 16px;
+  color: #fff;
+  font-family: "PFDinDisplay";
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 25px;
+  letter-spacing: 0.46px;
+  text-transform: uppercase;
+}
+#autopark .park-title h2 span {
+  color: #fec606;
+}
+#autopark .items-park .track {
+  position: relative;
+}
+#autopark .items-park .track:hover .more {
+  opacity: 1;
+}
+#autopark .items-park .track:hover img {
+  width: 100%;
+  height: 210px;
+}
+#autopark .items-park img {
+  position: relative;
+  width: 100%;
+  height: 210px;
+  border: 5px solid #fff;
+}
+#autopark .items-park .more {
+  position: absolute;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  width: 100%;
+  height: 210px;
+  top: 0;
+  opacity: 0;
+  -webkit-transition: all 0.2s linear 0s;
+  -o-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+#autopark .items-park .more a {
+  display: block;
+  padding-top: 100px;
+  font-size: 20px;
+  color: #ffab00;
+  font-family: "PFDinDisplay";
+  font-weight: normal;
+}
+#autopark .items-park h3 {
+  color: #232c2e;
+  font-family: "PFDinDisplay";
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.6px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+/*==================NEWS===================*/
+#news {
+  position: relative;
+}
+#news .news-title {
+  position: relative;
+  top: -50px;
+  background: url(../images/bg-news.png) no-repeat;
+  height: 60px;
+  margin-bottom: 35px;
+}
+#news .news-title h2 {
+  color: #fff;
+  font-family: "PFDinDisplay";
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 25px;
+  letter-spacing: 0.46px;
+  padding-left: 30px;
+  padding-top: 16px;
+  text-transform: uppercase;
+}
+#news .news-title h2 span {
+  color: #fec606;
+}
+#news .item {
+  margin-bottom: 20px;
+  height: 170px;
+}
+#news .item img {
+  width: 170px;
+  height: 170px;
+  float: left;
+}
+#news .item .txt-news {
+  margin-left: 30px;
+  float: left;
+}
+#news .item .txt-news time {
+  color: #c8c8c8;
+  font-family: "PFDinDisplay";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+}
+#news .item .txt-news h3 {
+  color: #232c2e;
+  font-family: "PFDinDisplay";
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+}
+#news .item .txt-news h3:hover {
+  color: #ffab00;
+}
+#news .item .txt-news p {
+  color: #232c2e;
+  font-family: "PFDinDisplay";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+#news .item .txt-news p:hover {
+  color: #ffab00;
+}
+/*==================REVIEWS===================*/
+#reviews {
+  height: 320px;
+}
+#reviews img {
+  position: absolute;
+  width: 100%;
+  height: 388px;
+}
+#reviews .contant-reviews {
+  height: 320px;
+  margin-top: 53px;
+}
+#reviews .review-title {
+  position: relative;
+  background: url(../images/bg-review.png) no-repeat;
+  height: 60px;
+  margin-bottom: 35px;
+}
+#reviews .review-title h2 {
+  color: #fff;
+  font-family: "PFDinDisplay";
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 25px;
+  letter-spacing: 0.46px;
+  padding-left: 30px;
+  padding-top: 18px;
+  text-transform: uppercase;
+}
+#reviews .review-title h2 span {
+  color: #fec606;
+}
+#reviews .review {
+  position: relative;
+  background: url(../images/bg-com.png) no-repeat;
+  background-size: 100%;
+  height: 240px;
+}
+#reviews .review img {
+  position: relative;
+  top: -30px;
+  width: 129px;
+  height: 129px;
+}
+#reviews .review .comment {
+  position: relative;
+  top: -40px;
+  font-size: 14px;
+  color: #232c2e;
+  font-family: "PFDinDisplay";
+  font-weight: normal;
+  line-height: 20px;
+}
+#reviews .review p {
+  position: relative;
+  top: -30px;
+  font-size: 16px;
+  color: #c8c8c8;
+  font-family: "PFDinDisplay";
+  font-weight: normal;
+  line-height: 30px;
+}
+/*==================MAP===================*/
+#map {
+  position: relative;
+  }
+/*==================FOOTER===================*/
+footer {
+  height: 80px;
+}
+footer .logotype img {
+  margin-top: 10px;
+  width: 270px;
+}
+footer .header-post::before {
+  content: url(../images/mail.png);
+  padding: 25px 15px 0 34px;
+  float: left;
+}
+footer .header-post .mail {
+  padding-top: 22px;
+}
+footer .header-post p {
+  font-size: 18px;
+  color: #232c2e;
+}
+footer .header-post a {
+  margin-left: 64px;
+  font-size: 16px;
+  color: #a8acaf;
+  border-bottom: 1px dashed #a8acaf;
+}
+footer .header-post a:hover {
+  color: #ffab00;
+  text-decoration: none;
+  border-bottom: 1px dashed #ffab00;
+}
+footer .header-address::before {
+  content: url(../images/map.png);
+  padding: 25px 15px 45px 34px;
+  float: left;
+}
+footer .header-address .map {
+  padding-top: 22px;
+  font-size: 18px;
+  color: #232c2e;
+}
+footer .header-address .map a {
+  font-size: 16px;
+  color: #a8acaf;
+  border-bottom: 1px dashed #a8acaf;
+}
+footer .header-address .map a:hover {
+  color: #ffab00;
+  text-decoration: none;
+  border-bottom: 1px dashed #ffab00;
+}
+footer .header-phone .phone {
+  padding: 12px 0 0 38px;
+}
+footer .header-phone p {
+  font-size: 26px;
+  color: #ffab00;
+  font-family: "PFDinDisplay";
+  font-weight: bold;
+  float: right;
+}
+footer .header-phone img {
+  margin-top: 42px;
+  display: block;
+  position: absolute;
+  margin-left: 85px;
+}
+footer .header-phone a {
+  float: right;
+  font-size: 16px;
+  color: #a8acaf;
+  border-bottom: 1px dashed #a8acaf;
+}
+footer .header-phone a:hover {
+  color: #ffab00;
+  text-decoration: none;
+  border-bottom: 1px dashed #ffab00;
+}
+/*==================SETTING===================*/
+.col-md-8 .about-tit h2 {
+  margin-top: 0 !important;
+}

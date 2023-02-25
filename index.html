@@ -1,14 +1,419 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ru">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport"
-		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="description" content="Привет! Меня зовут Морган, и я fullstack-разработчик. Рад встрече)">
-	<title>Портфолио Моргана</title>
+    <meta charset="UTF-8">
+    <title>Портфолио Моргана</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Sayt yaratish, Разработка сайтов, Telegram bots, Internet magazin, CRM разработка, Программист, Dasturchi, Developer, Bot yasash, Sayt yaratish, Sayt ochish">
+    <meta name="author" content="Morgan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Привет! Меня зовут Морган, и я fullstack-разработчик. Рад встрече">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="icon" type="images/x-icon" href="img/logo.ico">
+    <!--chart-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.malihu.PageScroll2id.min.js"></script>
+    <script src="js/common.js"></script>
 </head>
+
 <body>
-<h1> Hello how are you???</h1>
+    <div class="wrapper">
+        <!-- ШАПКА -->
+        <header id="header">
+            <img src="img/bg.png" alt="Фон" class="bgcolor">
+            <div id="lead-overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-2 col-xs-4 logotype">
+                        <a href="https://wmmorgan.github.io/"><img src="img/logo.png" alt="Логотип">&nbsp;</a>
+                    </div>
+                    <div class=" col-md-offset-1 col-sm-6 col-sm-offset-1 col-xs-10 col-xs-offset-1 caption text-center wow fadeInDown" data-wow-offset="150">
+                        <h4 class="titl">Добро пожаловать на сайт портфолио</h4>
+                    </div>
+                    <div class="btn col-md-offset-2 col-lg-offset-2 col-sm-offset-2 col-xs-offset-5" autofocus>
+                        <div class="sandwich">
+                            <div class="sw-top"></div>
+                            <div class="sw-mid"></div>
+                            <div class="sw-foot"></div>
+                        </div>
+                    </div>
+                    <div class="menu" style="display: none;">
+                        <ul>
+                            <li><a href="#header" rel='m_PageScroll2id'>Главная<span></span></a></li>
+                            <li><a href="#about" rel='m_PageScroll2id'>Обо мне<span></span></a></li>
+                            <li><a href="#portfolio" rel='m_PageScroll2id'>Портфолио<span></span></a></li>
+                            <li><a href="#contacts" rel='m_PageScroll2id'>Контакты<span></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="top-txt">
+                        <div class="top-sur text-center">
+                            <div>
+                                <h1>Сирожов Махмуд</h1>
+                            </div>
+                            <div class="desc">
+                                <p class="top-text wow fadeInUp" data-wow-offset="150">WEB-РАЗРАБОТЧИК / HTML-ВЕРСТАЛЬЩИК</p>
+                                <br>
+                                <p class="top-text wow fadeInUp" data-wow-offset="150">ПРОГРАММИСТ PHP / JAVASCRIPT</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- ОБО МНЕ -->
+        <section id="about">
+            <div class="container">
+                <div class="about">
+                    <div class="row">
+                        <div class="content text-center">
+                            <div class="wow fadeInUp" data-wow-offset="150">
+                                <h2>Обо мне</h2>
+                                <hr>
+                            </div>
+                            <div class="some-about col-lg-4 col-md-4 col-sm-4 wow fadeInLeft" data-wow-offset="150">
+                                <h3>Немного о себе</h3>
+                                <img src="img/me1.png" alt="Лист" class="me1 ">
+                                <p>Доброго времени суток, меня зовут Сирожов Махмуд
+                                    <br> Я занимаюсь web-разработкой с нуля, под ключ.
+                                    <br> Выполняю верстку и программирование сайтов,а так же доработку, добавляя полный функционал на сайт! Верстаю адаптивную верстку с помощью Bootstrap,
+                                    <br>таким образом сайт получается красивым на любом устройстве, будь то комьютер, ноутбук или телефон!
+                                </p>
+                            </div>
+                            <div class="some-about col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-offset="150">
+                                <h3>Знания и Умения</h3>
+                                <img src="img/me2.png" alt="лист" class="me2">
+                                <p>Знаю такие языки программирования, как: <br>PHP, JavaScript.
+                                    <br>Языки разметки: HTML(5),
+                                    <br>таблицы стилей CSS(3).
+                                <li>Умею верстать адаптивные сайты под планшеты и мобильные устройства, фраемворк Bootstrap. Также знаю библиотеку jQuery!</li>
+                                <li>Я могу создавать сложных ботов Telegram на языке программирования PHP</li>
+                                <li>Сделаю быстрый, красивый и удобный сайт на WordPress для вашего бизнеса</li>
+                                <li>Разрабатываю ПО на фреймворках Larevel или Yii2</li>
+                                </p>
+                            </div>
+                            <div class="some-about col-lg-4 col-md-4 col-sm-4 wow fadeInRight" data-wow-offset="150">
+                                <h3>Самообразование</h3>
+                                <img src="img/me3.png" alt="лист" class="me3">
+                                <p>Курсы в интернете, видеокурсы, книги, документация, форумы, статьи...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skils text-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="top-text-ab wow fadeInUp" data-wow-offset="150">
+                                <h2>Профессиональные навыки</h2>
+                                <hr>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                                <h4>HTML5, CSS3</h4>
+                                <div id="test-circle1"></div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                                <h4>jQuery, JavaScript</h4>
+                                <div id="test-circle2"></div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                                <h4>PHP, MySQL</h4>
+                                <div id="test-circle3"></div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                                <h4>Laravel, Yii2</h4>
+                                <div id="test-circle4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ПОРТФОЛИО-->
+        <section id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="article-potf text-center">
+                        <div class="top-text-pt wow fadeInUp" data-wow-offset="150">
+                            <h2>Портфолио</h2>
+                            <hr>
+                        </div>
+                        <div class="top-menu-pt">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="top-menu filter_div controls">
+                                    <ul class="inline">
+                                        <li class="wow bounceInLeft filter active" type="button" data-filter=".all">Все работы</li>
+                                        <li class="wow bounceInLeft filter" type="button" data-filter=".category-1">"под ключ"</li>
+                                        <li class="wow bounceInRight filter" type="button" data-filter=".category-2">Верстка</li>
+                                        <li class="wow bounceInRight filter" type="button" data-filter=".category-3">Прочее</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="Container" class="content-potfol container">
+                            <div class="mix all category-2  category-3 col-lg-6 col-md-3 col-sm-3 col-xs-6 work-cont">
+                                <img src="img/sites/modern.png" alt="Пример" class="work">
+                                <div class="port-item-cont">
+                                    <h4>Modern Systems Invest</h4>
+                                    <p>Краткое описание Краткое описание</p>
+                                    <button type="button" class="btn-more" data-toggle="modal" data-target="#modal-1">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="mix all category-2 col-lg-6 col-md-3 col-sm-3 col-xs-6 work-cont">
+                                <img src="img/sites/barvent.png" alt="Пример" class="work">
+                                <div class="port-item-cont">
+                                    <h4><br>Barvent Impex</h4>
+                                    <p>Краткое описание</p>
+                                    <button type="button" class="btn-more" data-toggle="modal" data-target="#modal-2">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="mix all category-1 category-3 category-2 col-lg-6 col-md-3 col-sm-3 col-xs-6 work-cont">
+                                <img src="img/sites/tangroup.png" alt="Пример" class="work">
+                                <div class="port-item-cont">
+                                    <h4><br>Tangroup</h4>
+                                    <p>Краткое описание</p>
+                                    <button type="button" class="btn-more" data-toggle="modal" data-target="#modal-3">Подробнее</button>
+                                </div>
+                            </div>
+
+                            <div class="mix all category-2 col-lg-6 col-md-3 col-sm-3 col-xs-6 work-cont">
+                                <img src="img/work4.png" alt="Пример" class="work">
+                                <div class="port-item-cont">
+                                    <h4><br>Portfolio</h4>
+                                    <p>Краткое описание</p>
+                                    <button type="button" class="btn-more" data-toggle="modal" data-target="#modal-4">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--КОНТАКТЫ-->
+        <section id="contacts">
+            <div class="container">
+                <div class="row">
+                    <div class="cont-comm text-center">
+                        <div class="top-text-comm wow fadeInUp" data-wow-offset="150">
+                            <h2>Контакты</h2>
+                            <hr>
+                            <h4>Если у вас есть вопросы, я с радостью отвечу на них!<br> 
+Для этого свяжитесь со мной удобным для вас способом и я отвечу Вам в ближайшее время!</h4>
+                        </div>
+                        <div class="info">
+                            <div class="col-md-3 col-sm-3 col-xs-6 wow bounceInLeft" data-wow-offset="100">
+                                <div class="contact-box">
+                                    <div class="contacts-icon">
+                                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                    </div>
+                                    <h4>E-mail:</h4>
+                                    <p>morganhakker@gmail.com</p>
+                                </div>
+                                <div class="contact-box">
+                                    <div class="contacts-icon">
+                                        <i class="fa fa-telegram" aria-hidden="true"></i>
+                                    </div>
+                                    <h4>Telegram:</h4>
+                                    <a href="https://t.me/c_morgan">https://morgan.t.me</a>
+                                </div>
+                                <div></div>
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-6 wow bounceInLeft" data-wow-offset="100">
+                                <div class="contact-box">
+                                    <div class="contacts-icon">
+                                        <i class="fa fa-desktop" aria-hidden="true"></i>
+                                    </div>
+                                    <h4>Web-сайт:</h4>
+                                    <a href="https://wmmorgan.github.io">wmmorgan.github.io</a>
+                                </div>
+                                <div class="contact-box">
+                                    <div class="contacts-icon">
+                                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                    </div>
+                                    <h4>LinkedIn:</h4>
+                                    <a href="https://www.linkedin.com/in/mahmud-sirojov">Махмуд Сирожов</a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-sm-6 col-xs-12 wow bounceInRight" data-wow-offset="100">
+                                <div class="top-text-message">
+                                    <h4>Так же Вы можете написать свое сообщения прямо здесь!<br>Вам необходио заполнить все поля!</h4>
+                                </div>
+                                <div class="message">
+                                    <form id="my-form" method="post" action="https://formspree.io/f/mgebkjdp">
+                                        <p><label>Ваше имя</label>
+                                            <br>
+                                            <input class="form-control" type="text" size="32" required name="your_name" placeholder="Ваше имя">
+                                        </p>
+                                        <p><label>Ваш E-mail</label>
+                                            <br>
+                                            <input class="form-control" type="email" size="32" required name="email" placeholder="example@mail.com">
+                                        </p>
+                                        <p><label>Ваше сообщение</label>
+                                            <br>
+                                            <textarea class="form-control" type="text" name="comment" cols="34" rows="5" name="messages" placeholder="Ваше сообщение"></textarea>
+                                        </p>
+                                        <p>
+                                            <input id="my-form-button" type="submit" value="Отправить" class="btn-sub">
+                                        <p id="my-form-status"></p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--ПОДВАЛ-->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 col-sm-5 col-xs-10">
+                        <div class="text-info">
+                            <p>© 2018 Махмуд Сирожов. Профессиональное создание ПО</p>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-sm-1 col-xs-1 col-md-offset-6 col-sm-offset-6">
+                        <div class="social">
+                            <a href="https://t.me/c_morgan">
+                                <i class="fa fa-telegram" aria-hidden="true"></i>
+                            </a>
+<a href="https://www.linkedin.com/in/mahmud-sirojov">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+<a href="mailto:morganhakker@gmail.com">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <div class="modal" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h3 class="modal-title">Подробнее</h3>
+                    <button class="close" type="button" data-dismiss="modal">
+                        <i class="fa fa-close"></i>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="img-content">
+                        <img src="img/pic-more1.png" alt="Синявинска Фабрика">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn-danger" type="button" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h3 class="modal-title">Подробнее</h3>
+                    <button class="close" type="button" data-dismiss="modal">
+                        <i class="fa fa-close"></i>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="img-content">
+                        <img src="img/pic-more2.png" alt="Картинка сайта">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn-danger" type="button" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h3 class="modal-title">Подробнее</h3>
+                    <button class="close" type="button" data-dismiss="modal">
+                        <i class="fa fa-close"></i>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="img-content">
+                        <img src="img/pic-more3.png" alt="Картинка сайта">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn-danger" type="button" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-4">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h3 class="modal-title">Подробнее</h3>
+                    <button class="close" type="button" data-dismiss="modal">
+                        <i class="fa fa-close"></i>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="img-content">
+                        <img src="img/pic-more4.png" alt="Картинка сайта">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn-danger" type="button" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/jquery.circliful.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<script src="js/jquery.circliful.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/mixitup.min.js"></script>
+<script>
+        var form = document.getElementById("my-form");
+
+        async function handleSubmit(event) {
+        event.preventDefault();
+        var status = document.getElementById("my-form-status");
+        var data = new FormData(event.target);
+        fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+        'Accept': 'application/json'
+    }
+    }).then(response => {
+        if (response.ok) {
+        status.innerHTML = "Спасибо за заявку!";
+        form.reset()
+    } else {
+        response.json().then(data => {
+        if (Object.hasOwn(data, 'errors')) {
+        status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+    } else {
+        status.innerHTML = "Ой! Возникла проблема с отправкой формы"
+    }
+    })
+    }
+    }).catch(error => {
+        status.innerHTML = "Ой! Возникла проблема с отправкой формы"
+    });
+    }
+        form.addEventListener("submit", handleSubmit)
+
+</script>
 </html>

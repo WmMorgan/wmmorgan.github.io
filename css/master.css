@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+body {
+    margin: 0 auto;
+    padding: 0px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.bgcolor {
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+    position: absolute;
+}
+
+.logotype {
+    max-width: 219px;
+    max-height: 150px;
+    margin-top: 70px;
+    position: relative;
+    z-index: 20;
+}
+
+.caption {
+    z-index: 20;
+}
+
+.caption h4 {
+    color: #9991da;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /*font-family: 'Akrobat';*/
+    margin-top: 90px;
+    font-weight: bold;
+}
+
+.btn {
+    width: 60px;
+    height: 60px;
+    background-color: #4a409a;
+    position: fixed;
+    z-index: 100;
+    cursor: pointer;
+    top: 70px;
+}
+
+.btn div {
+    display: block;
+}
+
+.btn:before, .btn:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.btn:before {
+    bottom: 0;
+    left: 0;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    border-radius: 4px;
+    -webkit-transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+    -o-transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+    transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+}
+
+.btn:after {
+    top: 0;
+    right: 0;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    border-radius: 4px;
+    -webkit-transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+    -o-transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+    transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+}
+
+.btn:hover:before, .btn:hover:after {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+
+.btn:hover:before {
+    -webkit-transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+    -o-transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+    transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+}
+
+.btn:hover:after {
+    -webkit-transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+    -o-transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+    transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+}
+
+.sandwich {
+    width: 45px;
+    height: 22px;
+    position: absolute;
+    top: 17px;
+    left: 7px;
+    z-index: 150;
+}
+
+.sw-top, .sw-mid, .sw-foot {
+    width: 45px;
+    height: 3px;
+    background: #ffffff;
+    position: relative;
+    border: none;
+}
+
+.sw-top {
+    top: 1px;
+    background: rgb(255, 255, 255);
+    border: none;
+    border-radius: 4px 4px 4px 4px;
+    -webkit-transition: top 0.2s, -webkit-transform 0.5s;
+    transition: top 0.2s, -webkit-transform 0.5s;
+    -o-transition: transform 0.5s, top 0.2s;
+    transition: transform 0.5s, top 0.2s;
+    transition: transform 0.5s, top 0.2s, -webkit-transform 0.5s;
+    transition: transform 0.5s, top 0.2s, -webkit-transform 0.5s;
+}
+
+.sw-mid {
+    top: 7px;
+    background: rgb(255, 255, 255);
+    border: none;
+    border-radius: 4px 4px 4px 4px;
+    -webkit-transition: top 0.2s, -webkit-transform 0.5s;
+    transition: top 0.2s, -webkit-transform 0.5s;
+    -o-transition: transform 0.5s, top 0.2s;
+    transition: transform 0.5s, top 0.2s;
+    transition: transform 0.5s, top 0.2s, -webkit-transform 0.5s;
+}
+
+.sw-foot {
+    top: 13px;
+    background: rgb(255, 255, 255);
+    border: none;
+    border-radius: 4px 4px 4px 4px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transition-delay: 0.1s;
+    -o-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+.top-txt {
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0;
+    left: 0;
+}
+
+.top-sur:before {
+    content: "";
+    display: inline-block;
+    height: 40%;
+    vertical-align: middle;
+}
+
+.top-sur {
+    height: 100%;
+}
+
+.top-sur div {
+    vertical-align: middle;
+}
+
+.sandwich.active .sw-top {
+    top: 10px;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.sandwich.active .sw-mid {
+    top: 7px;
+    -webkit-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+.sandwich.active .sw-foot {
+    opacity: 0;
+    top: 0;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.top-sur h1 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 5em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 0.9em;
+}
+
+.top-txt p {
+    color: #a0cfee;
+    font-weight: 500;
+    font-size: 2.25em;
+    /*margin-bottom: 15px;*/
+}
+.top-sur .desc {
+    margin-top: 30px;
+}
+
+.logotype img {
+    width: 218px;
+}
+#lead-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 70, 117, 0.8);
+    z-index: -90;
+}
+
+.some-about p {
+    font-family: "Google Sans", sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    color: #4a409a;
+}
+
+.inline {
+    font-size: 24px;
+}
+
+#contacts label {
+   color: #4a409a;
+}
+
+#contacts .contacts-icon i {
+    color: #4a409a;
+}
+.contact-box h4 {
+    color: #4a409a;
+}
+
+.contact-box .fa-telegram, .contact-box .fa-linkedin {
+    font-size: 64px;
+}
+.social {
+    margin-top: 31px;
+    display: inline-flex;
+}
+.social a {
+    display: inline-flex;
+    background-color: #a0cfee;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social a i {
+    color: #4a409a;
+    font-size: 25px;
+}
+.social a:hover {
+    text-decoration: none;
+}
+.social a:hover i {
+    font-size: 30px;
+}
+.some-about li {
+    text-align: left;
+    padding: 10px;
+    color: #4a409a;
+}

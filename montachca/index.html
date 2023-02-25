@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ATSC</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>@font-face { font-family: 'PFDinDisplay'; src: url('../fonts/PFDinDisplayPro-Black.eot'); src: url('../fonts/PFDinDisplayPro-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/PFDinDisplayPro-Black.woff') format('woff'), url('../fonts/PFDinDisplayPro-Black.ttf') format('truetype'); font-weight: Black; font-style: normal; } @font-face { font-family: 'PFDinDisplay'; src: url('../fonts/PFDinDisplayPro-Bold.eot'); src: url('../fonts/PFDinDisplayPro-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/PFDinDisplayPro-Bold.woff') format('woff'), url('../fonts/PFDinDisplayPro-Bold.ttf') format('truetype'); font-weight: bold; font-style: normal; } @font-face { font-family: 'PFDinDisplay'; src: url('../fonts/PFDinDisplayPro-Regular.eot'); src: url('../fonts/PFDinDisplayPro-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/PFDinDisplayPro-Regular.woff') format('woff'), url('../fonts/PFDinDisplayPro-Regular.ttf') format('truetype'); font-weight: normal; font-style: normal; } /*==================FONTS END===================*/ body { padding: 0px; font-family: "PFDinDisplay" !important; font-weight: normal; overflow-x: hidden; } p { margin: 0 !important; padding: 0; } /*==================HEADER===================*/ header { height: 80px; } header .logotype img { margin-top: 10px; max-width: 270px; width: 100%; } header .header-post::before { content: url(../images/mail.png); padding: 25px 15px 0 34px; float: left; } header .header-post .mail { padding-top: 22px; } header .header-post p { font-size: 18px; color: #232c2e; } header .header-post a { margin-left: 64px; font-size: 16px; color: #a8acaf; border-bottom: 1px dashed #a8acaf; } header .header-post a:hover { color: #ffab00; text-decoration: none; border-bottom: 1px dashed #ffab00; } header .header-address::before { content: url(../images/map.png); padding: 25px 15px 45px 34px; float: left; } header .header-address .map { padding-top: 22px; font-size: 18px; color: #232c2e; } header .header-address .map a { font-size: 16px; color: #a8acaf; border-bottom: 1px dashed #a8acaf; } header .header-address .map a:hover { color: #ffab00; text-decoration: none; border-bottom: 1px dashed #ffab00; } header .header-phone .phone { padding: 12px 0 0 38px; } header .header-phone p { font-size: 26px; color: #ffab00; font-family: "PFDinDisplay"; font-weight: bold; float: right; } header .header-phone img { margin-top: 42px; display: block; position: absolute; margin-left: 85px; } header .header-phone a { float: right; font-size: 16px; color: #a8acaf; border-bottom: 1px dashed #a8acaf; } header .header-phone a:hover { color: #ffab00; text-decoration: none; border-bottom: 1px dashed #ffab00; } /*==================MENU===================*/ #top-menu .menu { height: 80px; background: #fec606; border-radius: 2px; } .menu li { float: left; padding-left: 0px !important; padding-right: 0px !important; } .menu li:first-of-type { margin-left: 5px; } .menu li:before { content: url(../images/separator.jpg); display: block; width: 0; height: 0; position: absolute; top: 18px; margin-right: 0px; } .menu .menu1 { display: block; padding: 28px 0 29px 0; padding-left: 43px; padding-right: 43px; } .menu .menu1:last-of-type { padding-left: 38px; padding-right: 38px; } .menu .menu2 { display: block; padding: 17px 0 17px 0; padding-left: 37px; padding-right: 37px; } .menu a { left: 100px; font-size: 22px; font-family: "PFDinDisplay"; font-weight: bold; color: #fff; padding-right: 5px; letter-spacing: 20; line-height: 23px; } .menu a:hover { background: #ffab00; text-decoration: none; color: #fff; border-bottom-left-radius: 2px; border-top-left-radius: 2px; } .menu a:visited { color: #fff; } .menu a:focus { text-decoration: none; } /*==================SLIDER===================*/ #slider img { width: 100%; height: 700px; z-index: -100; position: absolute; margin-top: -60px; } #slider .top-txt { padding-top: 86px; color: #fff; position: relative; height: 640px; } #slider .top-txt h1 { font-family: "PFDinDisplay"; font-weight: bold; font-size: 80px; line-height: 80px; margin-bottom: 30px; letter-spacing: 1.6px; margin-top: 0px; } #slider .top-txt p { font-size: 16px; line-height: 30px; } #slider .top-txt button { margin-top: 42px; font-size: 20px; color: #232c2e; font-family: "PFDinDisplay"; font-weight: bold; padding: 15px 35px; background: #ffea00; letter-spacing: 0.4px; border-radius: 2px; position: absolute; border: none; z-index: 100; cursor: pointer; } #slider .top-txt .btn-slider { z-index: 100; position: absolute; margin-top: 160px; } #slider .top-txt span { z-index: 100; position: absolute; display: block; background: url(../images/1_normal.jpg) repeat-x; height: 5px; width: 40px; cursor: pointer !important; } #slider .top-txt span:hover { background: url(../images/2_hover.jpg) repeat-x; } #slider .top-txt .btn-slider2 { margin-left: 50px; } #slider .top-txt .btn-slider3 { margin-left: 100px; } #slider .top-txt .btn-slider4 { margin-left: 150px; } #slider .top-txt .btn-slider5 { margin-left: 200px; }</style>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+	<div class="page">
+		
+		<!--HEADER-->
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="top-header">
+						<div class="logotype col-lg-3 col-md-6 col-sm-3 col-xs-6">
+							<a href="#"><img src="images/logo.jpg" alt="Логотип"" class="responsive"></a>
+						</div>
+						<div class="header-post col-lg-2 col-md-6 col-sm-3 col-xs-6">
+							<div class="mail">
+								<p class="post">atsc@mail.ru</p>
+								<a href="#">Написать нам</a>
+							</div>
+						</div>
+						<div class="header-address col-lg-4 col-md-6 col-sm-3 col-xs-12">
+							<div class="map">
+								<p class="address">г.Актау,Северный рн., Ул.Тверская,16</p>
+								<a href="#">Найти на карте</a>
+							</div>
+						</div>
+						<div class="header-phone col-lg-3 col-md-6 col-sm-3 col-xs-12">
+							<div class="phone">
+								<p>+7 (499) 735-55-66</p>
+								<img src="images/phone.png" alt="Телефон">
+								<a href="#">Заказать звонок</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!--TOP-MENU-->
+		
+		<section id="top-menu">
+			<div class="container">
+				<div class="row">
+					<div class="menu text-center col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<ul class="list-inline">
+							<li><a href="#" class="menu1 mn-f">Главная</a></li>
+							<li><a href="#" class="menu1">Услуги</a></li>
+							<li><a href="#" class="menu2">Аренда<br> техники</a></li>
+							<li><a href="#" class="menu2">Продажи<br> б/у техники</a></li>
+							<li><a href="#" class="menu2">Ремонт<br> техники</a></li>
+							<li><a href="#" class="menu1">Запчасти</a></li>
+							<li><a href="#" class="menu1">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>			
+		</section>
+
+
+		<!--SLIDER-->
+		<section id="slider">
+			<img src="images/img_slaider.jpg" alt="Фон">
+			<div class="container">
+				<div class="row">
+					<div class="banner col-lg-7 col-md-7 col-sm-7 col-xs-7">
+						<div class="top-txt">
+							<h1>Аренда, ремонт<br>
+							и обслуживание<br>
+							спецтехники</h1>
+							<p>По своей сути рыбатекст является альтернативой традиционному<br>
+							lorem ipsum, который вызывает у некторых клиентов недоумение<br>
+							при попытках прочитать рыбу текст</p>	
+							<button type="button">Подробнее</button>
+							<div class="btn-slider">
+								<span class="btn-slider1"></span>
+								<span class="btn-slider2"></span>
+								<span class="btn-slider3"></span>
+								<span class="btn-slider4"></span>
+								<span class="btn-slider5"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="about-us">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">				
+						<div class="about-company">
+							<div class="about-tit">
+								<h2>о <span>компании</span></h2>
+							</div>
+							<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев<br>более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык<br>публичных выступлений в домашних условиях. При создании генератора мы использовали<br>небезызвестный универсальный код речей. Текст генерируется абзацами случайным образом<br>от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным<br>и живым для визуально-слухового восприятия.</p>
+						</div>
+						<p class="ab-tit">Подробнее про нас</p>	
+					</div>
+					<div class="about-form col-lg-4 com-md-4 col-sm-5 col-xs-12">
+						<div class="form text-center">
+							<img src="images/cap-form.png" alt="картинка">
+							<p>Форма обратной связи</p>
+							<form action="">
+								<input type="text" size="35" required name="your_name" placeholder="Имя" class="in-name">
+								<input type="text" size="35" required name="your_email" placeholder="Эл. почта" class="in-mail">
+								<textarea cols="42" rows="3" name="messages" placeholder="Сообщение" class="in-mess"></textarea>
+								<button type="submite">Отправить</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="advatantages">
+				<div class="container">			
+					<div class="row">
+						<div class="advant-item">
+							<div class="quality col-lg-4 col-md-4 com-sm-4 col-xs-12">
+							<img src="images/medal.png" alt="Медаль">
+							<h4>Качество</h4>
+							<p>Все техника и оборудование<br>
+	сертифицировано и протестировано</p>
+							</div>
+							<div class="selection col-lg-4 col-md-4 com-sm-4 col-xs-12">
+							<img src="images/crane.png" alt="Кран">
+							<h4>Огромный автопарк</h4>
+							<p>Большой выбор современной<br>техники для решения любых задач</p>
+							</div> 
+							<div class="service col-lg-4 col-md-4 com-sm-4 col-xs-12">
+							<img src="images/service.png" alt="Шестеренки">
+							<h4>Сервис</h4>
+							<p>Собственные станки для ремонта.<br>Меньшая стоимость обслуживания</p>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--SERVICE-->
+		<section id="service">
+			<img src="images/bg_1.jpg" alt="Фон">
+			<div class="container">
+				<div class="row">
+					<div class="ser-title">
+						<h2>Наши <span>услуги</span></h2>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 item-serv">
+						<a href="">
+							<img src="images/7.jpg" alt="Услуги" >
+							<div class="outline text-center">
+								<h3>Аренда<br>техники</h3>
+								<p>Подробнее</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3  col-xs-3 item-serv">
+						<a href="">
+							<img src="images/9.JPG" alt="Услуги">
+							<div class="outline text-center">
+								<h3>Продажа<br>б/у техники</h3>
+								<p>Подробнее</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 item-serv">
+						<a href="">
+							<img src="images/10.jpg" alt="Услуги">
+							<div class="outline text-center">
+								<h3>Ремонт<br>техники</h3>
+								<p>Подробнее</p>
+							</div>	
+						</a>	
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 item-serv">
+						<a href="">
+							<img src="images/13.jpg" alt="Услуги">
+							<div class="outline text-center">
+								<h3><br>Запчасти</h3>
+								<p>Подробнее</p>
+							</div>
+						</a>	
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--AUTOPARK-->
+		<section id="autopark">
+			<img src="images/bg-park.png" alt="Фон">
+			<div class="container">
+				<div class="row">
+					<div class="items-park">
+						<div class="park-title">
+							<h2>Наш <span>Автопарк</span></h2>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
+							<div class="track">
+								<img src="images/track1.jpg" alt="Фронтальные погрузчики">
+								<h3>Фронтальные погрузчики</h3>
+								<div class="more">
+									<a href="">Подробнее</a>
+								</div>
+							</div>
+							<div class="track">
+								<img src="images/track2.jpg" alt="Автогрейдеры">
+								<h3>Автогрейдеры</h3>
+								<div class="more">
+									<a href="">Подробнее</a>
+								</div>
+							</div>
+							<div class="track">
+								<img src="images/track3.jpg" alt="Автобетоносмесители">
+								<h3>Автобетоносмесители</h3>
+								<div class="more">
+									<a href="">Подробнее</a>
+								</div>
+							</div>
+							<div class="track">
+								<img src="images/track4.jpg" alt="Цементовозы">
+								<h3>Цементовозы</h3>
+								<div class="more">
+									<a href="">Подробнее</a>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
+							<div class="track">
+								<img src="images/track21.jpg" alt="Эскаватор">
+								<h3>Эскаватор</h3>
+								<div class="more">
+									<a href="">Подробнее</a>
+								</div>
+							</div>
+							<div class="track">
+								<img src="images/track22.jpg" alt="Буровые станки">
+								<h3>Буровые станки</h3>
+								<div class="more">
+									<a href="">Подробнее</a>
+								</div>
+							</div>
+							<div class="track">
+								<img src="images/track23.jpg" alt="Поливомоечные машины">
+								<h3>Поливомоечные машины</h3>
+								<div class="more">
+									<a href="">Подробнее</a>
+								</div>
+							</div>
+							<div class="track">
+								<img src="images/track24.jpg" alt="Автокраны">
+								<h3>Автокраны</h3>
+								<div class="more">
+									<a href="">Подробнее</a>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
+							<div class="track">
+								<img src="images/track31.jpg" alt="Бульдозеры">
+								<h3>Бульдозеры</h3>
+								<div class="more">
+									<a href="">Подробнее</a>
+									<div class="more">
+									<a href="">Подробнее</a>
+								</div>
+								</div>
+							</div>
+							<div class="track">
+								<img src="images/track32.jpg" alt="Самосвалы">
+								<h3>Самосвалы</h3>
+								<div class="more">
+									<a href="">Подробнее</a>
+								</div>
+							</div>
+							<div class="track">
+								<img src="images/track33.jpg" alt="Автоцистерны">
+								<h3>Автоцистрены</h3>
+								<div class="more">
+									<a href="">Подробнее</a>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
+							<div class="track">
+								<img src="images/track41.jpg" alt="Дорожные виброкатки">
+								<h3>Дорожные виброкатки</h3>
+								<div class="more">
+									<a href="">Подробнее</a>
+								</div>
+							</div>
+							<div class="track">
+								<img src="images/track42.jpg" alt="Тягачи">
+								<h3>Тягачи</h3>
+								<div class="more">
+									<a href="">Подробнее</a>
+								</div>
+							</div>
+							<div class="track">
+								<img src="images/track43.JPG" alt="Автотопливозаправщики">
+								<h3>Автотопливозаправщики</h3>
+								<div class="more">
+									<a href="">Подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</section>
+
+		<!--NEWS-->
+
+		<section id="news">
+			<div class="container">
+				<div class="row">
+					<div class="content-news">
+						<div class="news-title">
+							<h2>Последние  <span>новости</span></h2>
+						</div>
+						<div class="item-news col-lg-6 col-md-6 col-sm-12 col-xs-12">
+							<div class="item">
+								<img src="images/news1.jpg" alt="Тракотор">
+								<div class="txt-news">
+									<time>30.04.2017</time>
+									<h3>Пример заголовка названия темы<br>
+									новости в несколько строк</h3>
+									<p>По своей сути рыбатекст является альтернативой<br>традиционному lorem ipsum, который вызывает у<br>некторых клиентов недоумение</p>
+								</div>
+							</div>
+							<div class="item">
+								<img src="images/news2.jpg" alt="Тракотор">
+								<div class="txt-news">
+									<time>13.03.2017</time>
+									<h3>Пример заголовка названия темы<br>
+									новости в несколько строк</h3>
+									<p>По своей сути рыбатекст является альтернативой<br>традиционному lorem ipsum, который вызывает у<br>некторых клиентов недоумение</p>
+								</div>
+							</div>
+						</div>
+						<div class="item-news col-lg-6 col-md-6 col-sm-12 col-xs-12">
+							<div class="item">
+								<img src="images/news3.jpg" alt="Тракотор">
+								<div class="txt-news">
+									<time>30.04.2017</time>
+									<h3>Пример заголовка названия темы<br>
+									новости в несколько строк</h3>
+									<p>По своей сути рыбатекст является альтернативой<br>традиционному lorem ipsum, который вызывает у<br>некторых клиентов недоумение</p>
+								</div>
+							</div>
+							<div class="item">
+								<img src="images/news4.jpg" alt="Тракотор">
+								<div class="txt-news">
+									<time>13.03.2017</time>
+									<h3>Пример заголовка названия темы<br>
+									новости в несколько строк</h3>
+									<p>По своей сути рыбатекст является альтернативой<br>традиционному lorem ipsum, который вызывает у<br>некторых клиентов недоумение</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--REVIEWS-->
+		<section id="reviews">
+			<img src="images/bg_2.jpg" alt="Фон">
+			<div class="container">
+				<div class="row">
+					<div class="contant-reviews">
+						<div class="review-title">
+							<h2>Отзывы <span>клиентов</span></h2>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 review text-center">
+							<img src="images/photo1.png" alt="Фото">
+							<p class="comment">По своей сути рыбатекст является альтернативой<br>традиционному lorem ipsum, который вызывает<br>у некторых клиентов недоумение при попытках<br> прочитать рыбу текст.</p>
+							<p>Бойко Александ</p>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 review text-center">
+							<img src="images/photo2.png" alt="Фото">
+							<p class="comment">По своей сути рыбатекст является альтернативой<br>традиционному lorem ipsum, который вызывает<br>у некторых клиентов недоумение при попытках<br> прочитать рыбу текст.</p>	
+							<p>Бойко Александ</p>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 review text-center">
+							<img src="images/photo3.png" alt="Фото">	
+							<p class="comment">По своей сути рыбатекст является альтернативой<br>традиционному lorem ipsum, который вызывает<br>у некторых клиентов недоумение при попытках<br> прочитать рыбу текст.</p>
+							<p>Бойко Александ</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d287426.5249750355!2d37.352324958073886!3d55.74947332896357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2sua!4v1494269416606" width="1920" height="360" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</section>
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="top-header">
+						<div class="logotype col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<a href="#"><img src="images/logo.jpg" alt="Логотип"" class="responsive"></a>
+						</div>
+						<div class="header-post col-lg-2 col-md-6 col-sm-6 col-xs-12">
+							<div class="mail">
+								<p class="post">atsc@mail.ru</p>
+								<a href="#">Написать нам</a>
+							</div>
+						</div>
+						<div class="header-address col-lg-4 col-md-6 col-sm-6 col-xs-12">
+							<div class="map">
+								<p class="address">г. Актау, Северный рн., Ул. Тверская, 16</p>
+								<a href="#">Найти на карте</a>
+							</div>
+						</div>
+						<div class="header-phone col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="phone">
+								<p>+7 (499) 735-55-66</p>
+								<img src="images/phone.png" alt="Телефон">
+								<a href="#">Заказать звонок</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/media.css">
+<script src="https://yastatic.net/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
