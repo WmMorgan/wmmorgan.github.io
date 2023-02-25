@@ -202,11 +202,12 @@
 
 .port-item-cont {
     position: absolute;
-    left: 0;
+    padding-top: 20px;
+    left: 16px;
     overflow: hidden;
     background: rgba(0, 0, 0, 0.8);
     text-align: center;
-    width: 100%;
+    width: 95%;
     height: 100%;
     top: 0;
     opacity: 0;
@@ -242,9 +243,9 @@
     text-decoration: none;
     color: #fff;
     top: 66px;
-    background: #f8b410;
+    background: #4a409a;
     padding: 5px 10px;
-    border: 1px solid #f8b410;
+    border: 1px solid #4a409a;
     border-radius: 3px;
     opacity: 0;
     -webkit-transition: all 0.5s linear 0s;
@@ -254,7 +255,7 @@
 
 .port-item-cont button:hover {
     border: none;
-    background: #f89310;
+    background: #4a409a;
     text-decoration: none;
     font-size: 14pt;
     color: #fff;
@@ -413,5 +414,15 @@ footer .fa-vk {
 }
 
 .modal img {
-    width: 500px;
+    width: 948px;
+}
+
+.btn-primary {
+    background: #4a409a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 14pt;
+    text-align: center;
+    border-radius: 5px;
 }

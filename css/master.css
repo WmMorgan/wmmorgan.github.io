@@ -289,3 +289,100 @@ body {
     padding: 10px;
     color: #4a409a;
 }
+
+.modal-dialog {
+    width: 1000px;
+}
+.info-site {
+    text-align: left;
+    padding: 30px;
+
+}
+.info-site h4 {
+    font-family: "Google Sans", sans-serif;
+    font-weight: 500
+}
+
+@media only screen and (max-width: 748px) {
+    footer {
+        height: unset!important;
+        padding-bottom: 30px;
+    }
+    #contacts, #portfolio {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .inline {
+        font-size: 14px;
+    }
+
+    #portfolio .col-sm-3 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #portfolio .content-potfol .work {
+        height: unset;
+        border-radius: 27px;
+    }
+
+    .port-item-cont {
+        left: 0!important;
+        /*top: 16px!important;*/
+        /*height: 93% !important;*/
+        border-radius: 27px;
+        width: 100% !important;
+    }
+    .modal-dialog {
+        width: 360px;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .modal img {
+        width: 329px!important;
+    }
+    .info-site h4 {
+        font-weight: 500;
+    }
+
+
+    header .btn {
+        top: 12px;
+        right: 11px;
+    }
+
+    #about .some-about p, #about .knowledge p, #about .self p {
+        font-size: 16px;
+    }
+    #about .row {
+        margin: inherit;
+    }
+    header .logotype img {
+        width: 181px;
+        height: unset;
+    }
+    .bgcolor {
+        height: 71%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .caption h4 {
+        margin-top: unset;
+    }
+    header .top-sur h1 {
+        margin-bottom: 50px;
+    }
+    #lead-overlay {
+        height: 71%;
+    }
+    .col-md-3 {
+        margin-bottom: 20px!important;
+    }
+    .top-sur:before{
+        height: 29% !important;
+    }
+    .top-txt p {
+        font-size: 16px;
+    }
+}

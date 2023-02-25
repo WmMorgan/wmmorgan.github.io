@@ -21,9 +21,16 @@ $(document).ready(function() {
     $("#test-circle3").circliful({ animation: 1, animationStep: 6, foregroundBorderWidth: 5, backgroundColor: "none", fillColor: '#eee', percent: 65, foregroundColor: '#333', animateInView: 'true', });
     $("#test-circle4").circliful({ animation: 1, animationStep: 6, foregroundBorderWidth: 5, backgroundColor: "none", fillColor: '#eee', percent: 40, foregroundColor: 'red', animateInView: 'true', alwaysDecimals: 'true', });
     
-    $(function() { 
-    	$('#Container').mixItUp({}); });
+    $(function() {
+    	$('#Container').mixItUp({
+        });
+    });
+    $(document).ready(function(){
+        $('.active').click();
+    });
+
     $(".top-menu li").click(function() { $(".top-menu li").removeClass("active");
         $(this).addClass("active"); });
-    $(window).on("load", function() { $(".menu li a[rel='m_PageScroll2id']").mPageScroll2id({ offset: $("#id"), scrollSpeed: 900, }); });
+    $(window).on("load", function() {
+        $(".menu li a[rel='m_PageScroll2id']").mPageScroll2id({ offset: $("#id"), scrollSpeed: 900, }); });
     new WOW().init(); });
