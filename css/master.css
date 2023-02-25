@@ -385,26 +385,18 @@ body {
     .top-txt p {
         font-size: 16px;
     }
-    #header {
-        min-height: 348px!important;
-    }
+
     .some-about p {
         font-family: "Lato", sans-serif;
         font-weight: 500;
     }
 
+    header {
+        height: 365px!important;
+    }
+
 }
 
-#loadingD {
-    background: url('../img/spinner.gif') no-repeat center center;
-    position: absolute;
-    background-color: #4a409a;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 9999999;
-}
 
 #loading {
     position:fixed;
@@ -438,4 +430,8 @@ body {
     border-radius:50%;
     -webkit-animation: spin .8s linear infinite;
     animation: spin .8s linear infinite;
+}
+
+#header {
+    height: 1000px;
 }

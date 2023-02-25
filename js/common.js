@@ -1,12 +1,7 @@
 $(document).ready(function() {
-    function heightDetect() { 
-    	$("#header").css("min-height", $(window).height()) 
-    };
-    heightDetect();
-
-    $(window).resize(function() { 
-    	heightDetect(); 
-    });
+    /*function heightDetect() {
+    	$("#header").css("min-height", $(window).height() / 2 + 60)
+    };*/
 
     $(".btn, .menu ul li a span").click(function() {
     	$(".sandwich").toggleClass("active"); 
@@ -35,8 +30,14 @@ $(document).ready(function() {
         $(".menu li a[rel='m_PageScroll2id']").mPageScroll2id({ offset: $("#id"), scrollSpeed: 900, });
     });
 
+    /*heightDetect();
+    $(window).resize(function() {
+        heightDetect();
+    });*/
+
     var width = $("body").width();
     if (width > 1024) {
+
         new WOW().init();
     }
 
