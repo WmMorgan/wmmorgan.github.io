@@ -363,7 +363,7 @@ body {
         height: unset;
     }
     .bgcolor {
-        height: 71%;
+        /*height: 71%;*/
         object-fit: cover;
         object-position: center;
     }
@@ -373,14 +373,12 @@ body {
     header .top-sur h1 {
         margin-bottom: 50px;
     }
-    #lead-overlay {
-        height: 71%;
-    }
+
     .col-md-3 {
         margin-bottom: 20px!important;
     }
     .top-sur:before{
-        height: 29% !important;
+        height: 41% !important;
     }
     .top-txt p {
         font-size: 16px;
@@ -393,6 +391,7 @@ body {
 
     header {
         height: 365px!important;
+        position: relative;
     }
 
 }
