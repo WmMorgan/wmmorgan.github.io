@@ -437,3 +437,14 @@ body {
 #header {
     height: 1000px;
 }
+
+.some-about:hover {
+    scale: 1.2;
+    background-color: #bed8fc;
+    z-index: 10;
+    -webkit-box-shadow: 0 8px 8px 7px rgba(40, 40, 40, 0.11);
+    box-shadow: 0 8px 8px 7px rgba(40, 40, 40, 0.11);
+}
+.some-about {
+    transition: all 1s;
+}
