@@ -92,7 +92,7 @@
                                 <li>Умею верстать адаптивные сайты под планшеты и мобильные устройства, фраемворк Bootstrap. Также знаю библиотеку jQuery!</li>
                                 <li>Я могу создавать сложных ботов Telegram на языке программирования PHP</li>
                                 <li>Сделаю быстрый, красивый и удобный сайт на WordPress для вашего бизнеса</li>
-                                <li>Разрабатываю ПО на фреймворках Larevel или Yii2</li>
+                                <li>Разрабатываю ПО на фреймворках Laravel или Yii2</li>
                                 </p>
                             </div>
                             <div class="some-about col-lg-4 col-md-4 col-sm-4 wow fadeInRight" >
@@ -153,6 +153,14 @@
                             </div>
                         </div>
                         <div id="Container" class="content-potfol container">
+                            <div class="last revision col-lg-6 col-md-3 col-sm-3 work-cont">
+                                <img src="img/sites/ulkan.png" alt="Пример" class="work">
+                                <div class="port-item-cont">
+                                    <h4>Ulkan - конструкторы сайтов</h4>
+                                    <p>Впервые в Узбекистане можно создать сайт самостоятельно и бесплатно! Конструктор сайтов Ulkan позволяет Вам легко и быстро создать личный или бизнес сайт.</p>
+                                    <button type="button" class="btn-more" data-toggle="modal" data-target="#modal-8">Подробнее</button>
+                                </div>
+                            </div>
                             <div class="mix last layout full col-lg-6 col-md-3 col-sm-3 work-cont">
                                 <img src="img/sites/modern.png" alt="Пример" class="work">
                                 <div class="port-item-cont">
@@ -492,6 +500,34 @@
             </div>
         </div>
     </div>
+<div class="modal" id="modal-8">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h3 class="modal-title">Подробнее</h3>
+                    <button class="close" type="button" data-dismiss="modal">
+                        <i class="fa fa-close"></i>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="img-content">
+                        <img src="img/sites/ulkan.png" alt="ulkan">
+                    </div>
+                    <ul class="info-site">
+                        <li>Конструктор сайт: <a href="https://ulkan.uz">Ulkan - создания сайтов</a></li>
+                        <li>Технологии: Yii1, Jquery(ajax)</li>
+                        <li>Описание: Это конструкторы сайтов в этом проекте вы можете создать свой первый сайт по бизнесу. Что мне предстоил делать на этом проекте: я разрабатывал функция "мултыязычность" т.е вы можете делать свои сайт на несколко языках, а также починил интеграции с платежном системам как "Payme", "Click" и фиксировал не которые ошибки</li>
+                        <li>вот <a href="https://morgan.ulkansayt.uz">например</a> мой сайт который создано на этом конструкторе.</li>
+                    </ul>
+                    <hr>
+                    <img src="img/sites/morganulkan.png" alt="morgan">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn-primary" type="button" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 <link rel="stylesheet" href="css/style.css?v=5">
 <link rel="stylesheet" href="css/animate.css">
@@ -533,7 +569,7 @@
         form.addEventListener("submit", handleSubmit)
 
         //change src image every reload
-        var images = ['bg.png', 'business.webp', 'monitor.jpg', 'gadjets.jpg'];
+        var images = ['bg.png', 'business.jpg', 'monitor.jpg', 'gadjets.jpg'];
         $(".bgcolor").attr("src", "img/" + images[Math.floor(Math.random() * images.length)]);
 
         window.onload = function()
