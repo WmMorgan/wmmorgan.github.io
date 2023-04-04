@@ -448,3 +448,31 @@ body {
 .some-about {
     transition: all 1s;
 }
+.cs-cursor_lg {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #68C4F0;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    -webkit-transition: 0.15s;
+    transition: 0.15s;
+}
+.cs-cursor_sm {
+    width: 8px;
+    height: 8px;
+    background-color: #68C4F0;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+.cs-cursor_lg, .cs-cursor_sm {
+    position: fixed;
+    border-radius: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+    z-index: 9999;
+}

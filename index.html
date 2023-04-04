@@ -470,6 +470,7 @@
 <script src="js/jquery.circliful.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/mixitup.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js" integrity="sha512-gsEItzcNkWxfxHjr4BaEZAd9YuRWYjxnj7c/yukcZ0/nWehUb5TjJNyyv1ApCU2DFH/qgw+stFZHPOKnoQnIuQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
         var form = document.getElementById("my-form");
 
@@ -511,5 +512,35 @@
             //display loader on page load
             $('#loading').fadeOut();
         }
+
+        /*--------------------------------------------------------------
+    22. Cursor Animation
+  --------------------------------------------------------------*/
+        $(function () {
+            $('body').append('<span class="cs-cursor_lg"></span>')
+            $('body').append('<span class="cs-cursor_sm"></span>')
+        });
+        function cursorMovingAnimation(event) {
+            try {
+                const timing = gsap.timeline({
+                    defaults: {
+                        x: event.clientX,
+                        y: event.clientY,
+                    }
+                })
+
+                timing.to(".cs-cursor_lg", {
+                    ease: "power2.out"
+                })
+                    .to(".cs-cursor_sm", {
+                        ease: "power2.out"
+                    }, "-=0.4")
+
+            } catch (err) {
+                console.log(err)
+            }
+
+        }
+        document.addEventListener("mousemove", cursorMovingAnimation);
 </script>
 </html>
