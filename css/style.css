@@ -143,8 +143,7 @@
 }
 
 .top-text-pt hr {
-    height: 1px;
-    background: #9991da;
+    border-bottom: dashed 2px #9991da;
 }
 
 .top-menu li {
@@ -321,8 +320,7 @@
 }
 
 .top-text-comm hr {
-    height: 1px;
-    background: #9991da;
+    border-bottom: dashed 2px #9991da;
 }
 
 .top-text-comm h4 {
@@ -343,6 +341,7 @@
 .contact-box a {
     color: #333;
     text-decoration: none;
+    border-bottom: 1px dashed blue;
 }
 
 .contact-box a:hover {
